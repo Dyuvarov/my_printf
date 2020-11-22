@@ -6,12 +6,12 @@
 /*   By: ugreyiro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/15 13:51:26 by ugreyiro          #+#    #+#             */
-/*   Updated: 2020/11/15 13:51:29 by ugreyiro         ###   ########.fr       */
+/*   Updated: 2020/11/22 14:48:57 by ugreyiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef FT_PRINTF_BONUS_H
+# define FT_PRINTF_BONUS_H
 
 # include <stdarg.h>
 # include <stdlib.h>
