@@ -62,20 +62,21 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@make -C $(LIBFT)
 	@cp libft/libft.a ./$(NAME)
-	ar rc $(NAME) $(OBJS)
+	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)
 
 bonus: $(B_OBJS)
 	@make -C $(LIBFT)
 	@cp libft/libft.a ./$(NAME)
-	ar rc $(NAME) $(B_OBJS)
+	@ar rc $(NAME) $(B_OBJS)
 	@ranlib $(NAME)
 
-$(B_OBJS): $(B_SRCS)
-	gcc $(FLAGS) $(B_INCLUDES) -c $< -o $@
 
 %.o: $(DIR_S)/%.c
 	gcc $(FLAGS) $(INCLUDES) -c $< -o $@
+
+%.o: $(DIR_BS)/%.c
+	gcc $(FLAGS) $(B_INCLUDES) -c $< -o $@
 
 clean:
 	@rm -f $(OBJS)
