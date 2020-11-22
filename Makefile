@@ -87,4 +87,6 @@ fclean: clean
 	@rm -f $(NAME)
 	@make fclean -C $(LIBFT)
 
-re: fclean all bonus
+re: fclean all
+
+.PHONY:	all clean fclean re bonus
